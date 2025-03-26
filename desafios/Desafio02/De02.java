@@ -65,16 +65,16 @@ class Questao01 {
 
 	}
 
-	public static int fibonacci(int valor) {
+	public static int fibonacci(int _valor) {
 
-		if (valor == 0)
+		if (_valor == 0)
 			return 0;
 
-		else if (valor == 1)
+		else if (_valor == 1)
 			return 1;
 
 		else
-			return fibonacci(valor - 1) + fibonacci(valor - 2);
+			return fibonacci(_valor - 1) + fibonacci(_valor - 2);
 
 	}
 
@@ -97,9 +97,9 @@ class Questao02 {
 
 	}
 
-	public static int fibonacci(int valor) {
+	public static int fibonacci(int _valor) {
 
-		return (valor == 0 || valor == 1) ? valor : fibonacci(valor - 1) + fibonacci(valor - 2);
+		return (_valor == 0 || _valor == 1) ? _valor : fibonacci(_valor - 1) + fibonacci(_valor - 2);
 
 	}
 

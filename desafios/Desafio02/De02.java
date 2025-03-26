@@ -13,7 +13,7 @@ para calcular o resultado.
 operador condicional ternário.
 */
 
-package desafios.Desafio02;
+package desafios.desafio02;
 
 import java.util.Scanner;
 

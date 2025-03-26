@@ -7,7 +7,7 @@ Desafio - Fibonacci Iterativo
 1. Faça o exercício da série de Fibonacci usando apenas duas variáveis
 */
 
-package desafios.Desafio01;
+package desafios.desafio01;
 
 public class De01 {
 

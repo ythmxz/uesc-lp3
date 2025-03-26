@@ -12,7 +12,7 @@ Exercício 01 - System.out.println()
 usando uma única linha de código System.out.
 */
 
-package exercicios.Exercicio01;
+package exercicios.exercicio01;
 
 import java.util.Scanner;
 

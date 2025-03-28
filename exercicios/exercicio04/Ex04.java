@@ -159,43 +159,45 @@ class Conta {
 
 	Data dataAbertura = new Data();
 
+	public Conta() {}
+
 	public String getTitular() {
-		return this._titular;
+		return _titular;
 
 	}
 
 	public void setTitular(String _novoTitular) {
-		this._titular = _novoTitular;
+		_titular = _novoTitular;
 
 	}
 
 	public int getNumero() {
-		return this._numero;
+		return _numero;
 
 	}
 
 	public void setNumero(int _novoNumero) {
-		this._numero = _novoNumero;
+		_numero = _novoNumero;
 
 	}
 
 	public String getAgencia() {
-		return this._agencia;
+		return _agencia;
 
 	}
 
 	public void setAgencia(String _novaAgencia) {
-		this._agencia = _novaAgencia;
+		_agencia = _novaAgencia;
 
 	}
 
 	public double getSaldo() {
-		return this._saldo;
+		return _saldo;
 
 	}
 
 	public void setSaldo(double _novoSaldo) {
-		this._saldo = _novoSaldo;
+		_saldo = _novoSaldo;
 
 	}
 

@@ -45,7 +45,7 @@ dataDeAbertura daquela Conta.
 devolva uma String com "dia/mes/ano".
 */
 
-package exercicios.exercicio04;
+package java.exercicio04;
 
 import java.util.Scanner;
 import java.time.LocalDate;

@@ -35,7 +35,7 @@ imprima x.
 n n*2 n*3 ... n*n
 */
 
-package exercicios.exercicio03;
+package java.exercicio03;
 
 import java.util.Scanner;
 

@@ -27,7 +27,7 @@ mensal de gasto, criando uma variável mediaMensal junto com uma mensagem. Para 
 concatene a String com o valor, usando "Valor da média mensal = " + mediaMensal .
 */
 
-package exercicios.exercicio02;
+package java.exercicio02;
 
 public class Ex02 {
 

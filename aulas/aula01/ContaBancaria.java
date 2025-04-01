@@ -5,15 +5,15 @@ public class ContaBancaria {
 	private String _titular;
 	private double _saldo;
 
-	public ContaBancaria() {}
+	public ContaBancaria(String _titular, double _saldo) {
 
-	public String getTitular() {
-		return _titular;
+		this._titular = _titular;
+		this._saldo = _saldo;
 
 	}
 
-	public void setTitular(String _novoTitular) {
-		_titular = _novoTitular;
+	public String getTitular() {
+		return _titular;
 
 	}
 
@@ -44,8 +44,8 @@ public class ContaBancaria {
 		else {
 
 			setSaldo(_saldo + _valor);
+			System.out.println("\nDepósito de R$" + _valor + " concluído!");
 			System.out.println("\nSaldo atual: R$" + getSaldo());
-
 
 		}
 	}
@@ -65,6 +65,7 @@ public class ContaBancaria {
 		else {
 
 			setSaldo(_saldo - _valor);
+			System.out.println("\nSaque de R$" + _valor + " concluído!");
 			System.out.println("\nSaldo atual: R$" + getSaldo());
 
 		}
@@ -81,11 +82,10 @@ public class ContaBancaria {
 
 			System.out.println("\nTransferência de R$" + _valor + " concluída!");
 
-			return;
-
 		}
 
-		System.out.println("\nTransferência não finalizada!");
+		else
+			System.out.println("\nTransferência não finalizada!");
 
 	}
 

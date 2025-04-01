@@ -36,6 +36,9 @@ public class App {
 		outraConta.exibirInformacoes();
 		minhaConta.transferir(500, outraConta);
 		minhaConta.exibirInformacoes();
+		outraConta.exibirInformacoes();
+
+		Banco.exibirQuantidadeContas();
 
 	}
 

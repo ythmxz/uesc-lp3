@@ -4,11 +4,13 @@ public class ContaBancaria {
 
 	private String _titular;
 	private double _saldo;
+	private static int quantidadeContas;
 
 	public ContaBancaria(String _titular, double _saldo) {
 
 		this._titular = _titular;
 		this._saldo = _saldo;
+		quantidadeContas++;
 
 	}
 
@@ -24,6 +26,11 @@ public class ContaBancaria {
 
 	public void setSaldo(double _novoSaldo) {
 		_saldo = _novoSaldo;
+
+	}
+
+	public static int getQuantidadeContas() {
+		return quantidadeContas;
 
 	}
 
@@ -45,7 +52,7 @@ public class ContaBancaria {
 
 			setSaldo(_saldo + _valor);
 			System.out.println("\nDepósito de R$" + _valor + " concluído!");
-			System.out.println("\nSaldo atual: R$" + getSaldo());
+			System.out.println("Saldo atual: R$" + getSaldo());
 
 		}
 	}
@@ -58,7 +65,8 @@ public class ContaBancaria {
 		else if (_valor > _saldo) {
 
 			System.out.println("\nSaldo insuficiente!");
-			System.out.println("\nSaldo atual: R$" + getSaldo());
+			System.out.println("\nSaque de R$" + _valor + " não realizado!");
+			System.out.println("Saldo atual: R$" + getSaldo());
 
 		}
 
@@ -66,7 +74,7 @@ public class ContaBancaria {
 
 			setSaldo(_saldo - _valor);
 			System.out.println("\nSaque de R$" + _valor + " concluído!");
-			System.out.println("\nSaldo atual: R$" + getSaldo());
+			System.out.println("Saldo atual: R$" + getSaldo());
 
 		}
 
@@ -74,10 +82,9 @@ public class ContaBancaria {
 
 	public void transferir(double _valor, ContaBancaria destinatario) {
 
-		sacar(_valor);
+		if (_valor <= getSaldo() && _valor > 0.00d) {
 
-		if (_valor <= getSaldo() && _valor > 0) {
-
+			sacar(_valor);
 			destinatario.depositar(_valor);
 
 			System.out.println("\nTransferência de R$" + _valor + " concluída!");
@@ -85,7 +92,7 @@ public class ContaBancaria {
 		}
 
 		else
-			System.out.println("\nTransferência não finalizada!");
+			System.out.println("\nTransferênciade R$" + _valor + " não finalizada!");
 
 	}
 
